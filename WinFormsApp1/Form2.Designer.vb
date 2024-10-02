@@ -30,6 +30,9 @@ Partial Class Form2
         Label1 = New Label()
         Label2 = New Label()
         Button4 = New Button()
+        Button5 = New Button()
+        Button6 = New Button()
+        Button7 = New Button()
         SuspendLayout()
         ' 
         ' Options
@@ -92,7 +95,7 @@ Partial Class Form2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(467, 110)
+        Label2.Location = New Point(479, 111)
         Label2.Name = "Label2"
         Label2.Size = New Size(47, 21)
         Label2.TabIndex = 6
@@ -108,11 +111,45 @@ Partial Class Form2
         Button4.TextAlign = ContentAlignment.MiddleLeft
         Button4.UseVisualStyleBackColor = True
         ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(51, 310)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(144, 23)
+        Button5.TabIndex = 8
+        Button5.Text = "ADD"
+        Button5.TextAlign = ContentAlignment.MiddleLeft
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' Button6
+        ' 
+        Button6.Location = New Point(51, 261)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(144, 23)
+        Button6.TabIndex = 9
+        Button6.Text = "SUB"
+        Button6.TextAlign = ContentAlignment.MiddleLeft
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' Button7
+        ' 
+        Button7.Location = New Point(51, 219)
+        Button7.Name = "Button7"
+        Button7.RightToLeft = RightToLeft.Yes
+        Button7.Size = New Size(144, 23)
+        Button7.TabIndex = 10
+        Button7.Text = "MUL"
+        Button7.TextAlign = ContentAlignment.MiddleRight
+        Button7.UseVisualStyleBackColor = True
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(806, 472)
+        Controls.Add(Button7)
+        Controls.Add(Button6)
+        Controls.Add(Button5)
         Controls.Add(Button4)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -136,4 +173,7 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class

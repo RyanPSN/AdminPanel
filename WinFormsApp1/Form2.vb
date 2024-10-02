@@ -5,23 +5,25 @@
     End Sub
     Public Num1 = Num()
     Public Num2 = Num()
+    Public Op = New ArrayList()
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 
-    Function Add(ByVal a, ByVal b)
+    Public Function Add(ByVal a, ByVal b)
         Return a + b
 
     End Function
 
-    Function Subtract(ByVal a, ByVal b)
+    Public Function Subtract(ByVal a, ByVal b)
         Return a - b
 
     End Function
 
 
-    Function Num()
+    Public Function Num()
 
         Dim M As System.Random = New Random()
 
@@ -55,6 +57,10 @@
 
         End If
 
+        If (TextBox.Equals(Subtract(Num1, Num2))) Then
+            Label1.Text = "Correct"
+
+        End If
 
 
 
@@ -71,6 +77,10 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
         Label2.Text = Num1 & " + " & Num2
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
 End Class
