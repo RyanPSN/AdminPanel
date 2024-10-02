@@ -16,9 +16,16 @@
 
         End If
 
+        If (UserName.Equals("User") And Password.Equals("User")) Then
+            Label1.Text = "Signed In as: " + UserName
+            Label2.Text = "Username: " + UserName
+            Form2.Show()
+
+        End If
+
         If (Not UserName.Equals("Admin") And Not Password.Equals("Admin")) Then
 
-            Label1.Text = "Sorry Can't Sign In Wrong Login"
+            Label1.Text = "Sorry Can't Sign In As Admin"
         End If
 
 
