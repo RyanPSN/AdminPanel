@@ -15,6 +15,7 @@
     End Function
 
 
+
     Function Num()
 
         Dim M As System.Random = New Random()
@@ -37,6 +38,15 @@
             Form2.Show()
 
         End If
+
+        If (Not UserName.Equals("Admin") And Not Password.Equals("Admin")) Then
+
+
+            Label1.Text = "Sorry Can't Sign In Wrong Login"
+        End If
+
+
+
 
     End Sub
 
