@@ -4,8 +4,6 @@
 
     End Sub
 
-
-
     Function Add(ByVal a, ByVal b)
         Return a + b
 
@@ -35,6 +33,7 @@
 
         If (UserName.Equals("Admin") And Password.Equals("Admin")) Then
             Label1.Text = "Signed In as: " + UserName
+            Label2.Text = "Username: " + UserName
             Form2.Show()
 
         End If
@@ -50,6 +49,10 @@
     End Sub
 
     Private Sub RichTextBox2_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox2.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 End Class

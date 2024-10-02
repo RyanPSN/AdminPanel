@@ -26,6 +26,8 @@ Partial Class Form1
         RichTextBox1 = New RichTextBox()
         RichTextBox2 = New RichTextBox()
         Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
         SuspendLayout()
         ' 
         ' Button1
@@ -34,7 +36,7 @@ Partial Class Form1
         Button1.Name = "Button1"
         Button1.Size = New Size(156, 23)
         Button1.TabIndex = 0
-        Button1.Text = "Button1"
+        Button1.Text = "Sign In"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' RichTextBox1
@@ -60,21 +62,44 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Location = New Point(11, 437)
         Label1.Name = "Label1"
-        Label1.Size = New Size(41, 15)
+        Label1.Size = New Size(83, 15)
         Label1.TabIndex = 3
-        Label1.Text = "Label1"
+        Label1.Text = "Sign in as null "
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(44, 93)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(86, 15)
+        Label2.TabIndex = 4
+        Label2.Text = "Username: null"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(44, 178)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(83, 15)
+        Label3.TabIndex = 5
+        Label3.Text = "Password: null"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(363, 466)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(RichTextBox2)
         Controls.Add(RichTextBox1)
         Controls.Add(Button1)
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "Form1"
-        Text = "Form1"
+        Text = "Admin Panel"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -83,5 +108,7 @@ Partial Class Form1
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 
 End Class
